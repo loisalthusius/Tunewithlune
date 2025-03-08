@@ -108,7 +108,7 @@ nav ul {
 
 /* video styling */
 iframe {
-  width: 380px;
+  max-width: 380px;
   height: auto;
   aspect-ratio: 16 / 9; /* bron voor de aspect-ratio van de video's:https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio */
 }
@@ -220,3 +220,44 @@ footer ul {
   background: #a74d6b;
 border: 0.1em dotted black;
 }
+
+/*responsive voor kleinere apparaten. Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries*/ 
+@media screen and (max-width: 1000px) {
+  body {
+    padding-top: 20vh;
+    padding-bottom: 8vh;
+    font-size: 0.75em;
+  }
+
+  nav ul {
+   font-size: 0.7em;
+   max-width: 55vw;
+  }
+
+  main ul {
+font-size: 0.65em;
+  }
+
+  .over-ons-container {
+    flex-direction: column; /* content onder elkaar */
+    text-align: center;
+  }
+
+  .tekst-over-ons {
+    max-width: 60vw; 
+  }
+
+  img {
+    max-width: 60vw;
+  }
+
+  main ul {
+    flex-direction: column; /* Video's onder elkaar zetten */
+    gap: 3vh;
+  }
+
+  iframe {
+    max-width: 90%; 
+  }
+}
+
