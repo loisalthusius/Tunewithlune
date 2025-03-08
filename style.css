@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Fascinate+Inline&display=swap');
+
+/* algemene stijlen */
+body{
+  background-color: #c1a5a9;
+  padding-top: 16vh;
+  padding-bottom: 10vh;
+}
+
+ p {
+  text-decoration: none;
+  font-family:sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: black;
+  text-align: center;
+  }
+
+  h1 {
+    font-family: "Fascinate", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size:  1.7em;
+   color: #a74d6b;
+   text-align: center;
+  }
+
+  h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.2em;
+   color: black;
+   text-align: center;
+  }
+
+  h3 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.2em;
+   color: black;
+   text-align: center;
+  }
+
+/* nav styling & styling voor de hover functies */
+  nav {
+    background-color: #946c6c;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+nav img{
+  max-width: 100%;
+  max-height: 15vh;
+  }
+
+  .spacey{ /* positionering afbeelding nav */
+    width: 115.6px;
+    height: 88.54px;
+    }
+  
+  nav li :hover { 
+    background: #a74d6b;
+  padding: 0.19em;}
+
+ ul a, header li{
+    color: black;
+    background-color: #d9c2c2;
+    padding: 0.2em;
+    border-radius: 0.1em;
+    display: inline-block;
+      font-family: "Fascinate Inline", system-ui;
+      font-weight: 400;
+      font-size: 1.2em;
+      font-style: normal;
+    transition: all 250ms ease;
+}
+/* positionering pagina namen website */ 
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 5vw;
+  align-items:center;
+  list-style: none;
+  }
+
+
+/* index pagina */
+.home-pagina {
+  margin-top: 3vh;
+}
+
+.home-pagina p {
+  margin-bottom: 15vh;
+  font-family:'Times New Roman', Times, serif;;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+/* video styling */
+iframe {
+  width: 380px;
+  height: auto;
+  aspect-ratio: 16 / 9; /* bron voor de aspect-ratio van de video's:https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio */
+}
+
+iframe {
+  border: 0.2em solid #a74d6b; 
+  border-radius: 0.2em; 
+}
+
+iframe:hover {
+  transform: scale(1.05); 
+  transition: transform 300ms ease;
+}
+
+/* gebruikt voor video's "afleveringen" */
+main ul { 
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items:center;
+  list-style: none;
+  gap: 5em; 
+}
+
+/* "over ons" pagina */
+.over-ons-container img{
+  max-width:50%;
+  border-radius: 1em;
+  max-height:48vh;
+  object-fit: cover; /* Zodat afbeelding niet vervormd. Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
+}
+
+.over-ons-container {
+  display: flex;
+  gap: 3%; /* ruimte tussen tekst en afbeelding */
+  flex-direction: row; /* Zet de afbeelding en tekst naast elkaar */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 20vh; 
+  margin-top: 12vh;
+}
+
+.over-ons-container:nth-of-type(even) {
+  flex-direction: row-reverse; /* dezelfde styling als hierboven, maar dan gespiegeld*/
+}
+
+.over-ons-container ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items:center;
+  list-style: none;
+  gap: 0.1em;
+  }
+
+.tekst-over-ons {
+ display: flex;
+ flex-direction: column; 
+ align-items: center;
+  max-width:38vw;
+  font-size: 1em;
+}
+ /*tekst onder app iconen*/
+main li a {  
+  font-size: 1.19em;
+}
+
+/* hover styling main  */
+main ul a:hover { 
+  background: #a74d6b;
+border: 0.1em dotted black;
+padding: 0.19em;}
+
+/* footer styling */
+footer {
+  color: black;
+  background-color: #946c6c;
+  /* positionering navigatiebalk */
+position: fixed; 
+bottom: 0%;
+left: 0%;
+width: 100vw;
+height: 10vh;
+display: flex;
+justify-content:flex-start;
+flex-direction: row;
+align-items:center;
+gap: 2em;
+}
+
+footer li {
+  font-size: 1.5em;
+}
+
+footer ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.8em;
+  font-size: 0.5em;
+  list-style: none;
+}
+
+/* hover styling  footer */
+ footer ul :hover { 
+  background: #a74d6b;
+border: 0.1em dotted black;
+}
